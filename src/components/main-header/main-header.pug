@@ -1,44 +1,43 @@
 section.home
 	header.mainHeader
 		.container
-			.flex-container.flex-container--header
-				.mainHeader__logo
-					.mainHeader__rectangle
-						.rectangle-1
-						.rectangle-2
-						.rectangle-3
-						.rectangle-4
-						.mainHeader__img
-					.mainHeader__company
-						h1 Build Home
-						p industrial theme
-				.mainHeader__socials
-					a(href='https://www.facebook.com/').mainHeader__link.mainHeader__link-fb
-						i.fab.fa-facebook-f
-					a(href='https://www.twitter.com/').mainHeader__link.mainHeader__link-twit
-						i.fab.fa-twitter
-					a(href='#').mainHeader__link.mainHeader__link-rss
-						i.fas.fa-rss
-					a(href='#').mainHeader__link.mainHeader__link-in
-						i.fab.fa-linkedin-in
-					a(href='#').mainHeader__link.mainHeader__link-skype
-						i.fab.fa-skype
-	nav.mainNav
+			.row.justify-content-between
+				.col-3
+					.mainLogo
+						.mainLogo__img
+						.mainLogo__caption
+							h1 Build Home
+							p industrial theme
+				.col-2
+					.socials
+						a(href='https://www.facebook.com/').socials__link.socials__link-fb
+							i.fab.fa-facebook-f
+						a(href='https://www.twitter.com/').socials__link.socials__link-twit
+							i.fab.fa-twitter
+						a(href='#').socials__link.socials__link-rss
+							i.fas.fa-rss
+						a(href='#').socials__link.socials__link-in
+							i.fab.fa-linkedin-in
+						a(href='#').socials__link.socials__link-skype
+							i.fab.fa-skype
+	.mainNav
 		.container
-			.flex-container.flex-container--nav
-				ul.mainNav__list
-					li.mainNav__item
-						a(href='#').mainNav__link.mainNav__link-active home
-						a(href='#').mainNav__link features
-						a(href='#').mainNav__link services
-						a(href='#').mainNav__link news
-						a(href='#').mainNav__link shop
-				ul.mainNav__basket
-					li.mainNav__item
-						a(href='#').mainNav__link
-							i.fas.fa-shopping-cart
-							i.fas.fa-pound-sign
-							span 0
-						a(href='#').mainNav__link
-							i.fas.fa-search
+			.row.justify-content-between
+				.col
+					nav.nav
+						ul.nav__list
+							li.nav__item
+								a(href='#').nav__link.nav__link-active home
+								a(href='#').nav__link features
+								a(href='#').nav__link services
+								a(href='#').nav__link news
+								a(href='#').nav__link shop
+						ul.nav__basket
+							li.nav__item
+								a(href='#').nav__link.nav__link-cart
+									i.fas.fa-shopping-cart
+									i.fas.fa-pound-sign
+									span 0
+								a(href='#').nav__link.nav__link-search
+									i.fas.fa-search
 

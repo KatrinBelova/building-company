@@ -1,47 +1,18 @@
 .mainHeader
-	width 100%
-	
-.flex-container--header
-	justify-content space-between
-	align-items center
-	padding-top 37px
+	padding-top 36px
 
-.mainHeader__logo
+.mainLogo
 	display flex
-	padding-left 4px
 	
-.mainHeader__rectangle
-	display flex
-	flex-wrap wrap
+	
+.mainLogo__img
+	background-image url(../images/logo-img.png)
 	width 36px
 	height 36px
-	margin-right 13px
-	position relative
-	overflow hidden
-	.mainHeader__img
-		background-image url(../images/logo.png)
-		position absolute
-		top 2px
-		right -50%
-		width 100%
-		height 100%
-		z-index 2
-	.rectangle-1
-	.rectangle-2
-	.rectangle-3
-	.rectangle-4
-		width 18px
-		height 18px
-	.rectangle-1
-		background-color #fabd17
-	.rectangle-2
-		background-color #f0b000
-	.rectangle-3
-		background-color #ffd561
-	.rectangle-4
-		background-color #ffcc41
-
-.mainHeader__company
+	margin-left 4px
+	margin-right 16px
+	
+.mainLogo__caption
 	h1
 		color #434343
 		font-family 'Ubuntu', sans-serif
@@ -59,8 +30,8 @@
 		text-transform uppercase
 		letter-spacing 2.5px
 		
-.mainHeader__socials
-	.mainHeader__link
+.socials
+	.socials__link
 		font-size 16px
 		color #000
 		opacity 0.2
@@ -68,61 +39,83 @@
 		padding-right 8px
 		&:hover
 			opacity 1
-	.mainHeader__link-fb
+	.socials__link-fb
 		&:hover
 			color #3b5bdb
-	.mainHeader__link-twit
+	.socials__link-twit
 		&:hover
 			color #248cec
-	.mainHeader__link-rss
+	.socials__link-rss
 		&:hover
 			color #e8590c
-	.mainHeader__link-in
+	.socials__link-in
 		&:hover
 			color #ffa94d
-	.mainHeader__link-skype
+	.socials__link-skype
 		padding-right 0
 		&:hover
 			color #3bc9db
-			
-.flex-container--nav
+
+.mainNav
+	padding-top 36px
+	padding-bottom 36px
+				
+.nav
+	display flex
 	justify-content space-between
 	align-items center
-	width 100%
 	height 56px
 	background-color #2a2d32
 	color #fff
-	margin-top 36px
 	overflow hidden
+	box-shadow 0 12px 10px -10px rgba(0,0,0,0.5)
 	
-.mainNav__list	
-	.mainNav__link
+.nav__list
+	.nav__link
+		position relative
 		font-family 'Ubuntu Condensed', sans-serif
 		font-size 12px
 		font-weight 400
 		line-height 1
 		text-transform uppercase
 		padding 23px 41px
-		border-left 1px solid #151515
-		&::after
-			content ''
-			position absolute
-			top 0
-			margin-left 40px
-			height 100%
-			width 1px
-			background linear-gradient(to top, #ffffff 0%, #000101 100%)
-			opacity 0.3
+		border-right 1px solid #151515
+		box-shadow 
 		&:hover
 			color #f4b60d
+			
+.nav__link
+	&::after
+		content ''
+		position absolute
+		background linear-gradient(to top, #ffffff 0%, #000101 100%)
+		height 56px
+		width 1px
+		top 0
+		right 0
+		opacity 0.3
+.nav__link-cart
+	.fa-shopping-cart
+		padding-right 5px
+		font-size 16px
+	&::before
+		content ''
+		position absolute
+		background linear-gradient(to top, #ffffff 0%, #000101 100%)
+		height 56px
+		width 1px
+		top 0
+		left -1.5px
+		opacity 0.3			
 
-@css {
-	.mainNav__item:last-child {
-		border-right: 1px solid #151515;
-	}
-}	
+.nav__basket
+	.nav__link
+		position relative
+		font-size 12px
+		padding 23px 16px
+		border-left 1px solid #151515
 
-.mainNav__list			
-	.mainNav__link-active
+.nav__list			
+	.nav__link-active
 		border none
 		background-color #248cec
