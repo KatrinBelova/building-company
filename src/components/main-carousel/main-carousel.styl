@@ -1,4 +1,65 @@
 .mainCarousel
-	height 470px
-	width 100%
-	background #000
+	.container
+		padding-bottom 70px
+	.slick-list
+		width 100%
+		padding 0 !important
+		.carousel__item
+			height 450px
+			position relative
+			background url(../images/hangar-overlay.jpg) no-repeat
+			background-size cover
+			.carousel__description
+				position absolute
+				margin-left 36px
+				padding 24px 28px
+				bottom 38px
+				background-color rgba(26,26,26,.9)
+				p
+					color #ffffff
+					&:nth-child(1)
+						color yellow
+					span
+						font-family font, sans-serif
+						font-size 54px
+						font-weight 500
+						line-height 52px
+						text-transform uppercase
+	.slick-slider
+		position relative
+		.slick-dots
+			position absolute
+			bottom 15px
+			li
+				width 15px
+				height 15px
+				background-color #fff
+				button
+					&::before
+						content ''
+						width 9px
+						height 9px
+						top 3px
+						left 3px
+						background-color #000
+						opacity 0
+			.slick-active
+				button
+					&::before
+						opacity 1
+		&::after
+			content ''
+			position absolute
+			background-color #000
+			box-shadow: 0 25px 15px rgba(0, 0, 0, 0.6);
+			opacity 0.3
+			width 80%
+			right 0
+			left 0
+			margin auto
+			height 70px
+			z-index -1
+			bottom -10px
+			transform perspective(350px) rotateX(60deg)
+			
+	
